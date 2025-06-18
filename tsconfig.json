@@ -2,6 +2,11 @@
   "compilerOptions": {
     "module": "NodeNext",
     "moduleResolution": "Node16",
+    "paths": {
+      "@/*": ["*"], // <== Example: @/routes/index → src/routes/index.ts
+      "@controllers/*": ["controllers/*"], // optional: alias for src/controllers
+      "@utils/*": ["utils/*"] // optional: alias for src/utils
+    },
     "baseUrl": "./src",
     "outDir": "./dist",
     "sourceMap": true,
